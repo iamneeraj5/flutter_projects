@@ -5,8 +5,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class RouteGen {
   final LandingPageBloc landingPageBloc = LandingPageBloc();
-  Route<dynamic> generateRoute(RouteSettings settings) {
-    final args = settings.arguments;
+  Route generateRoute(RouteSettings settings) {
+    
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(
