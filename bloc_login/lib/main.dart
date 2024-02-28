@@ -1,5 +1,6 @@
 import 'package:bloc_login/Logic/auth_bloc/auth_bloc.dart';
 import 'package:bloc_login/Logic/landing_page_bloc/landing_page_bloc.dart';
+import 'package:bloc_login/Logic/signin_bloc/signin_bloc.dart';
 import 'package:bloc_login/presentation/pages/home_page.dart';
 import 'package:bloc_login/presentation/pages/login_page.dart';
 import 'package:flutter/material.dart';
@@ -19,14 +20,13 @@ class MyApp extends StatelessWidget {
         BlocProvider(
           create: (context) => AuthBloc(),
         ),
-        // BlocProvider(
-        //   create: (context) => LandingPageBloc(),
-        // )
+        BlocProvider(
+          create: (context) => SigninBloc(),
+        )
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         home: LoginPage(),
-        
       ),
     );
   }

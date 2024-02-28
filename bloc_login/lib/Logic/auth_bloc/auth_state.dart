@@ -20,3 +20,4 @@ final class AuthFailure extends AuthState {
 final class AuthLoading extends AuthState{
   
 }
+
